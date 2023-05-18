@@ -15,6 +15,7 @@
 		EBCD32E62A154635005AF76D /* chimeup.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EBCD32E42A154635005AF76D /* chimeup.mp3 */; };
 		EBCD32EC2A1548A7005AF76D /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBCD32EB2A1548A7005AF76D /* OnboardingView.swift */; };
 		EBCD32EE2A1548B6005AF76D /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBCD32ED2A1548B6005AF76D /* HomeView.swift */; };
+		EBCD32F12A166ADE005AF76D /* CircleUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBCD32F02A166ADE005AF76D /* CircleUI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		EBCD32EA2A154812005AF76D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		EBCD32EB2A1548A7005AF76D /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		EBCD32ED2A1548B6005AF76D /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		EBCD32F02A166ADE005AF76D /* CircleUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleUI.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 		EBCD32D32A15458D005AF76D /* Restart */ = {
 			isa = PBXGroup;
 			children = (
+				EBCD32EF2A166ABA005AF76D /* UI */,
 				EBCD32EA2A154812005AF76D /* Info.plist */,
 				EBCD32E92A154715005AF76D /* Utilities */,
 				EBCD32E82A154705005AF76D /* Views */,
@@ -111,6 +114,14 @@
 			children = (
 			);
 			path = Utilities;
+			sourceTree = "<group>";
+		};
+		EBCD32EF2A166ABA005AF76D /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				EBCD32F02A166ADE005AF76D /* CircleUI.swift */,
+			);
+			path = UI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -189,6 +200,7 @@
 				EBCD32EE2A1548B6005AF76D /* HomeView.swift in Sources */,
 				EBCD32D72A15458D005AF76D /* ContentView.swift in Sources */,
 				EBCD32D52A15458D005AF76D /* RestartApp.swift in Sources */,
+				EBCD32F12A166ADE005AF76D /* CircleUI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
