@@ -58,6 +58,8 @@ struct OnboardingView: View {
                     Image("character-1")
                         .resizable()
                         .scaledToFit()
+                        .opacity(isAnimating ? 1 : 0)
+                        .animation(.easeOut(duration: 0.5), value: isAnimating)
                 } //: Body
                 Spacer()
 
@@ -121,11 +123,14 @@ struct OnboardingView: View {
                 } //: Body
                 .frame(width: buttonWidth, height: buttonSize, alignment: .center)
                 .padding()
-                .onAppear{
-                    isAnimating = true
-                }
+                .opacity(isAnimating ? 1 : 0)
+                .offset(y: isAnimating ? 0 : 40)
+                .animation(.easeOut(duration: 1), value: isAnimating)
             } //: VStack
         } //: ZStack
+        .onAppear{
+            isAnimating = true
+        }
     }
 }
 
