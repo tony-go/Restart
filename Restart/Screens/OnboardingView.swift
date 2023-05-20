@@ -14,11 +14,12 @@ struct OnboardingView: View {
     
     @State private var buttonWidth: Double = UIScreen.main.bounds.width - buttonSize
     @State private var buttonOffset: CGFloat = 0
+    @State private var isAnimating: Bool = false
     
     private func goToHome() {
         isOnboardingViewActive = false
     }
-    
+
     private func resetButton() {
         buttonOffset = 0
     }
@@ -46,6 +47,9 @@ struct OnboardingView: View {
                         .multilineTextAlignment(.center)
                         .padding(.horizontal, 10)
                 } //: Header
+                .opacity(isAnimating ? 1 : 0)
+                .offset(y: isAnimating ? 0 : 40)
+                .animation(.easeOut(duration: 1), value: isAnimating)
 
                 // MARK: - BODY
                 ZStack {
@@ -117,6 +121,9 @@ struct OnboardingView: View {
                 } //: Body
                 .frame(width: buttonWidth, height: buttonSize, alignment: .center)
                 .padding()
+                .onAppear{
+                    isAnimating = true
+                }
             } //: VStack
         } //: ZStack
     }
