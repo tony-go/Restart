@@ -12,6 +12,11 @@ struct HomeView: View {
     
     @State private var isAnimating: Bool = false
     
+    private func goToOnboardingView() {
+        isOnboardingViewActive = true
+        playsound(sound: "success", type: "m4a")
+    }
+    
     var body: some View {
         VStack(spacing: 20) {
             // MARK: - Header
@@ -43,7 +48,7 @@ struct HomeView: View {
             Spacer()
             
             Button(action: {
-                isOnboardingViewActive = true
+                goToOnboardingView()
             }) {
                 Image(systemName: "arrow.triangle.2.circlepath.circle.fill")
                     .imageScale(.large)

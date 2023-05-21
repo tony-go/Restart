@@ -21,6 +21,7 @@ struct OnboardingView: View {
     
     private func goToHome() {
         isOnboardingViewActive = false
+        playsound(sound: "chimeup", type: "mp3")
     }
 
     private func resetButton() {
@@ -172,6 +173,7 @@ struct OnboardingView: View {
         .onAppear{
             isAnimating = true
         }
+        .preferredColorScheme(.dark)
     }
 }
 

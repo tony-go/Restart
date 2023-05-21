@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EBAC0FD82A1A8809002D6873 /* AudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBAC0FD72A1A8809002D6873 /* AudioPlayer.swift */; };
 		EBCD32D52A15458D005AF76D /* RestartApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBCD32D42A15458D005AF76D /* RestartApp.swift */; };
 		EBCD32D72A15458D005AF76D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBCD32D62A15458D005AF76D /* ContentView.swift */; };
 		EBCD32D92A15458D005AF76D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBCD32D82A15458D005AF76D /* Assets.xcassets */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EBAC0FD72A1A8809002D6873 /* AudioPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayer.swift; sourceTree = "<group>"; };
 		EBCD32D12A15458D005AF76D /* Restart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Restart.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBCD32D42A15458D005AF76D /* RestartApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestartApp.swift; sourceTree = "<group>"; };
 		EBCD32D62A15458D005AF76D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -112,6 +114,7 @@
 		EBCD32E92A154715005AF76D /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				EBAC0FD72A1A8809002D6873 /* AudioPlayer.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -201,6 +204,7 @@
 				EBCD32D72A15458D005AF76D /* ContentView.swift in Sources */,
 				EBCD32D52A15458D005AF76D /* RestartApp.swift in Sources */,
 				EBCD32F12A166ADE005AF76D /* CircleUI.swift in Sources */,
+				EBAC0FD82A1A8809002D6873 /* AudioPlayer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
