@@ -35,11 +35,6 @@ Follow these simple steps to get started with MindEase:
 ## 🎉 Acknowledgements
 This application is a achievement of this course: https://www.udemy.com/share/102drs/ by Robert Petras.
 
-**MindEase - Unwind, Unplug, Unleash!** 🌿🎵🚀
-
----
-
-Happy Coding and Meditating! 🎧🌈🧘‍♀️
 
 
 
