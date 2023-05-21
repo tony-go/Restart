@@ -17,7 +17,7 @@ Welcome to MindEase! This serene iOS meditation app is built with Swift UI, inte
 ## 📹 Demo Video
 To see the MindEase App in action, check out this comprehensive demo video. This will give you a feel of the user interface, the flow of the app, and its outstanding features. 
 
-[Demo Video Link](https://github.com/tony-go/Restart/assets/22824417/bc6301ed-811f-4d8c-a87e-63e525dc6edb) 
+[Demo Video Link](https://github.com/tony-go/Restart/assets/22824417/c2aae56a-0730-48a9-abf4-61183bbbd843) 
 
 ## 🎈 How To Use
 Follow these simple steps to get started with MindEase:
