@@ -19,9 +19,12 @@ struct OnboardingView: View {
     @State private var indicatorOpacity: Double = 1
     @State private var title: String = "Share."
     
+    let hapticFeedback = UINotificationFeedbackGenerator()
+    
     private func goToHome() {
         isOnboardingViewActive = false
         playsound(sound: "chimeup", type: "mp3")
+        hapticFeedback.notificationOccurred(.success)
     }
 
     private func resetButton() {
@@ -42,6 +45,8 @@ struct OnboardingView: View {
                         .fontWeight(.heavy)
                         .foregroundColor(.white)
                         .transition(.opacity)
+                        // NOTE: using this id property
+                        // to force transition because by default
                         .id(title)
 
                     Text("""
